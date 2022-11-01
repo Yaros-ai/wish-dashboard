@@ -1,0 +1,262 @@
+:root {
+  --bg: #f4f7f7;
+  --bgc: #fafafa;
+  --bg-dark: #7d58fe;
+  --text: #272727;
+  --accent: #fec830;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.container {
+  position: relative;
+}
+
+.container::before {
+  --size: 1005px;
+  width: var(--size);
+  height: var(--size);
+  content: '';
+  position: fixed;
+  left: 50%;
+  top: -730px;
+  background-color: var(--bgc);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container::after {
+  --size: 412px;
+  width: var(--size);
+  height: var(--size);
+  content: '';
+  position: fixed;
+  left: -89px;
+  bottom: -282px;
+  background-color: var(--bgc);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container {
+  width: 1024px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box {
+  margin-bottom: 80px;
+}
+
+.todo {
+  margin-bottom: 135px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  max-width: 200px;
+}
+
+.user-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-photo-wrapper {
+  --size: 68px;
+  width: var(--size);
+  height: var(--size);
+  box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(to top, #ff8f6f -12.42%, #ffc46d 38.23%, #faec45 93.22%);
+  position: relative;
+}
+
+.user-photo-wrapper::after {
+  content: '';
+  --size: 68px;
+  width: var(--size);
+  height: var(--size);
+  box-sizing: border-box;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #fff 0%, #fff 50%, transparent 50%, transparent);
+  transform: matrix(1, -0.07, 0.07, 1, 0, 0);
+}
+
+.circle {
+  --size: 58px;
+  width: var(--size);
+  height: var(--size);
+  box-sizing: border-box;
+  display: flex;
+  border: 8px solid #ede9fb;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+}
+
+.user-photo {
+  --size: 44px;
+  width: var(--size);
+  height: var(--size);
+  margin: auto;
+}
+
+.card {
+  width: 298px;
+  margin: 0;
+  min-height: 362px;
+  background: #fff;
+  border-radius: 32px;
+}
+
+.card-img-wrapper {
+  border-radius: 32px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.card-img {
+  display: block;
+  max-width: 298px;
+  object-fit: cover;
+  height: 242px;
+}
+
+.plot {
+  display: flex;
+  margin: 24px;
+  list-style: none;
+  align-items: baseline;
+  width: 250px;
+  padding: 0;
+}
+
+.plot-2 {
+  justify-content: flex-end;
+}
+
+.plot-item {
+  background: var(--accent);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 12px;
+  margin: 4px;
+}
+
+.amount-3 {
+  display: flex;
+}
+
+.accumulator {
+  margin: auto;
+}
+
+.gold {
+  font-size: 36px;
+  color: var(--accent);
+}
+
+.list {
+  list-style: none;
+  columns: 3;
+}
+
+.list-item {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.month,
+.skill {
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  width: 134px;
+  height: 60px;
+  color: #fff;
+  background: var(--bg-dark);
+  position: relative;
+}
+
+.month::before {
+  --size: 16px;
+  width: var(--size);
+  height: var(--size);
+  content: '';
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  left: calc(var(--size) / -2);
+  border-radius: 50%;
+  background-color: var(--bg);
+}
+
+.list-item:nth-of-type(3) .month,
+.list-item:nth-of-type(4) .month,
+.list-item:nth-of-type(5) .month,
+.list-item:nth-of-type(6) .month,
+.list-item:nth-of-type(11) .month,
+.list-item:nth-of-type(12) .month {
+  background: var(--accent);
+}
+
+.skill {
+  width: 164px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--text);
+  background: #fff;
+  text-align: start;
+}
+
+.title {
+  font-size: 42px;
+}
+
+.box-title {
+  font-size: 30px;
+}
+
+.card-description {
+  font-size: 20px;
+}
+
+.user-name,
+.month,
+.skill {
+  font-size: 14px;
+}

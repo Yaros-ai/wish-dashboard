@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <title>Wish Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="top">
+        <div class="logo-wrapper">
+          <a
+            href="https://goiteens.ua/"
+            class="logo-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            <img
+              src="./images/logo.png"
+              alt="logo GoIT"
+              width="200"
+              height="52"
+            />
+          </a>
+        </div>
+        <div class="user-wrapper">
+          <h1 class="user-name"></h1>
+          <div class="user-photo-wrapper">
+            <div class="circle">
+              <img class="user-photo" src="" alt="" width="44" height="44" />
+            </div>
+          </div>
+          <div class="qr-code-wrapper">
+            <img
+              class="qr-code"
+              src=""
+              alt="КР код до моєї сторінки"
+              width="70"
+              height="70"
+            />
+          </div>
+        </div>
+      </header>
+      <main>
+        <h2 class="title">Дошка моїх мрій  	<span>&#128075;</span></h2>
+        <section class="box dream">
+          <h3 class="box-title">Я хочу</h3>
+          <div class="cards dreams"></div>
+        </section>
+        <section class="box amount">
+          <h3 class="box-title">Для цього я зароблю</h3>
+          <div class="cards">
+            <figure class="card amount-1 download">
+              <div class="card-img-wrapper">
+                <ul class="plot plot-1"></ul>
+                
+              </div>
+              <figcaption class="card-description">
+                <p>Середній заробіток по роках</p>
+              </figcaption>
+            </figure>
+            <figure class="card amount-2 download">
+              <div class="card-img-wrapper">
+                <ul class="plot plot-2"></ul>
+              </div>
+              <figcaption class="card-description">
+                <p>Можливість відкладати з заробітку по роках</p>
+              </figcaption>
+            </figure>
+            <div class="card amount-3">
+                <p class="accumulator card-description"></p>
+            </div>
+          </div>
+        </section>
+        <section class="box todo">
+          <h3 class="box-title">Для цього я розвину</h3>
+          <ul class="list"></ul>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
